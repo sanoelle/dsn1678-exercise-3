@@ -92,11 +92,18 @@ body {
   background-color: #000;
   border-radius: 6px;
   opacity: 0;
+  
+  transition: 500ms linear;
 }
 
 .sales__details[data-state="active"]{
 	opacity: 1;
+	margin-top: 0;
 }
+
+/*.sales__details:click {
+	transition: 500ms linear;
+}*/
 
 .sales__details::before {
   top: -10px;
@@ -162,3 +169,4 @@ body {
 
   text-indent: 100%;
 }
+
